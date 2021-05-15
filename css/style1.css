@@ -1,0 +1,155 @@
+/*font styles import*/
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap');
+
+
+html {
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Arimo', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+h1 {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    opacity: 0;
+}
+
+
+a {
+
+    text-decoration: none;
+    color: black;
+}
+
+/*HEADER STYLING STARTS HERE*/
+
+.header-wrapper {
+    max-width: 1920px;
+    height: 100%;
+    margin: 0 auto;
+
+
+}
+
+.header-wrapper__top-line {
+    width: 100%;
+    height: 12px;
+    background-color: #20588C;
+}
+
+.header-container {
+    max-width: 1800px;
+    height: 255px;
+    margin: 0 60px 0 60px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    background-color: #cccccc;
+
+}
+
+
+.header-container__main-logo {
+    margin-top: 20px;
+    height: 155px;
+}
+
+.header-container__contacts-container {
+
+    height: 145px;
+    width: 745px;
+    margin: 30px 0 0 55px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: lightgreen;
+}
+
+.header-container__links {
+    width: 100%;
+    max-height: 28px;
+
+    background-color: yellow;
+}
+
+
+.header-container__links a {
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.header-container__links ul {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.header-container__phone {
+    margin-left: 25px;
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header-container__phone img {
+    padding-bottom: 25px;
+}
+
+.header-container__phone h3 {
+    font-size: 36px;
+}
+
+.header-container__phone h6 {
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: end;
+
+}
+
+#call-back-btn {
+    background-color: #20588C;
+    width: 310px;
+    height: 66px;
+    color: #cccccc;
+    font-size: 24px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 30px;
+}
+
+.header-container__logo-description-container {
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: lightblue;
+}
+
+.header-container__logo-description-container h2 {
+    font-size: 30px;
+    margin-left: 25px;
+}
