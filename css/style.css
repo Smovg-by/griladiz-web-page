@@ -30,7 +30,6 @@ h1 {
     opacity: 0;
 }
 
-
 a {
 
     text-decoration: none;
@@ -40,11 +39,11 @@ a {
 /*HEADER STYLING STARTS HERE*/
 
 .header-wrapper {
+    min-width: 320px;
     max-width: 1920px;
     height: 100%;
     margin: 0 auto;
     background-color: #DDDDDD;
-
 }
 
 .header-wrapper__top-line {
@@ -59,52 +58,37 @@ a {
 
 .header-container {
     max-width: 1800px;
-    height: 255px;
+    height: 215px;
     margin: 0 60px 0 60px;
-
     display: flex;
     flex-wrap: wrap;
-
-
-
 }
 
 .header-container__logo-contacts-wrapper {
-    margin-top: 20px;
+    width: 100%;
+    margin-top: 10px;
     display: flex;
+    justify-content: space-between;
     height: 155px;
 }
 
-.header-container__main-logo {
-    /*margin-top: 20px;*/
-    max-height: 155px;
-    max-width: 1000px;
-
-
-}
-
-.header-container__main-logo img {
-    height: auto;
-    width: 100%;
-
+.header-container__main-logo object {
+    height: 155px;
+    width: 800px;
 }
 
 .header-container__contacts-container {
-
     height: 155px;
     width: 745px;
     margin: 0 0 0 55px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    /*background-color: lightgreen;*/
 }
 
 .header-container__links {
     width: 100%;
     max-height: 28px;
-
-    /*background-color: yellow;*/
 }
 
 .header-container__links a {
@@ -114,21 +98,17 @@ a {
 }
 
 .header-container__links ul {
-
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .header-container__phone {
-    /*margin-left: 25px;*/
     margin-top: 45px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
 }
 
 .header-container__phone h3 {
@@ -136,13 +116,11 @@ a {
 }
 
 .header-container__phone h6 {
-    /*margin-top: 10px;*/
     font-size: 20px;
     text-align: end;
 }
 
 .header-container__phone-wrapper {
-
     height: 70px;
     width: 350px;
     display: flex;
@@ -162,99 +140,40 @@ a {
 }
 
 .header-container__logo-description-container {
-    height: 80px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-
-    /*background-color: lightblue;*/
+    height: 35px;
 }
 
 .header-container__logo-description-container h2 {
     font-size: 30px;
-    margin-left: 25px;
 }
 
-@media screen and (max-width: 1745px) {
+@media screen and (max-width: 1645px) {
 
-    .header-container__contacts-container {
-        height: 185px;
-    }
-
-    .header-container__phone {
-
-        margin-top: 25px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-
-    }
-
-    .header-container__phone h3 {
-        font-size: 30px;
-    }
-
-    #call-back-btn {
-        width: 280px;
-        height: 50px;
-        font-size: 22px;
-    }
-
-    .header-container__logo-description-container {
-        margin-top: 30px;
-        height: 50px;
-
-    }
-
-    .header-container__logo_eco img {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 1545px) {
     .header-container {
-        margin: 0 30px 0 30px;
+        height: 150px;
     }
 
     .header-container__logo-contacts-wrapper {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .header-container__main-logo {
-        /*margin-top: 20px;*/
-        max-height: 77px;
-        max-width: 500px;
-
+        height: 105px;
     }
 
     .header-container__contacts-container {
-        height: 185px;
-        width: 1050px;
-    }
-
-    .header-container__logo-description-container h2 {
-        font-size: 26px;
-    }
-
-}
-
-@media screen and (max-width: 1200px) {
-
-    .header-container {
-        height: 205px;
-    }
-
-    .header-container__links a {
-        font-size: 18px;
-        font-weight: bold;
-        text-decoration: underline;
+        height: 115px;
     }
 
     .header-container__phone {
-        margin-top: 10px;
+        margin-top: 25px;
+    }
+
+    .header-container__main-logo object {
+        height: 100%;
+        width: 500px;
+    }
+
+    .header-container__links a {
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: underline;
     }
 
     .header-container__phone h3 {
@@ -263,52 +182,209 @@ a {
 
     .header-container__phone h6 {
         font-size: 16px;
-    }
-
-    .header-container__logo-description-container {
-        height: 30px;
-        margin: 0;
+        text-align: end;
     }
 
     .header-container__logo-description-container h2 {
+        height: 100%;
+    }
+
+    .header-container__logo-description-container h2 {
+        font-size: 22px;
+    }
+
+    #call-back-btn {
+        width: 260px;
+        height: 55px;
         font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1370px) {
+
+    .header-container {
+        height: 120px;
+        margin: 0 20px 0 20px;
+    }
+
+    .header-container__logo-contacts-wrapper {
+        height: 85px;
     }
 
     .header-container__contacts-container {
-        height: 155px;
+        margin-left: 25px;
+        /*max-width: 460px;*/
+        height: 95px;
+    }
+
+    .header-container__logo-description-container {
+        height: 22px;
+    }
+
+
+    .header-container__main-logo object {
+        height: 100%;
+        width: 385px;
+    }
+
+    .header-container__links a {
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    .header-container__phone {
+        max-width: 745px;
+        justify-content: flex-end;
+    }
+
+
+    .header-container__phone h3 {
+        font-size: 22px;
+    }
+
+    .header-container__phone h6 {
+        font-size: 12px;
+        text-align: end;
+    }
+
+    .header-container__phone-wrapper {
+        height: 40px;
+        width: 210px;
+    }
+
+    .header-container__phone-wrapper img {
+        height: 20px;
+        width: 20px;
+    }
+
+    .header-container__logo-description-container h2 {
+        font-size: 16px;
+    }
+
+    #call-back-btn {
+        width: 200px;
+        height: 42px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 870px) {
+
+    .header-container {
+        height: 90px;
+        margin: 0 20px 0 20px;
+    }
+
+    .header-wrapper__top-line {
+        height: 6px;
+    }
+
+    .header-container__logo-contacts-wrapper {
+        height: 65px;
+    }
+
+    .header-container__contacts-container {
+        margin-left: 15px;
+        /*max-width: 460px;*/
+        height: 75px;
+    }
+
+    .header-container__logo-description-container {
+        height: 12px;
+    }
+
+
+    .header-container__main-logo object {
+        height: 100%;
+        width: 275px;
+    }
+
+    .header-container__links a {
+        font-size: 12px;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    .header-container__phone {
+        margin-top: 10px;
+        max-width: 745px;
+        justify-content: flex-end;
+    }
+
+
+    .header-container__phone h3 {
+        font-size: 16px;
+    }
+
+    .header-container__phone h6 {
+        font-size: 10px;
+        text-align: end;
+    }
+
+    .header-container__phone-wrapper {
+        height: 40px;
+        width: 210px;
+    }
+
+    .header-container__phone-wrapper img {
+        height: 15px;
+        width: 15px;
+    }
+
+    .header-container__logo-description-container h2 {
+        font-size: 12px;
+    }
+
+    #call-back-btn {
+        width: 166px;
+        height: 35px;
+        font-size: 12px;
     }
 
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 720px) {
 
-    .header-wrapper__top-line {
-        height: 5px;
+    .nav {
+        display: initial;
     }
 
     .header-container {
-        height: 55px;
+        height: 70px;
         margin: 0 10px 0 10px;
     }
 
-    .header-container__main-logo {
-        margin-left: 40px;
-        max-height: 39px;
-        max-width: 250px;
-        min-width: 150px;
-
+    .header-container__main-logo object {
+        height: 100%;
+        width: 200px;
     }
 
     .header-container__logo-contacts-wrapper {
-        margin-top: 10px;
-        height: 40px;
+        margin-top: 0;
+        height: 70px;
+        display: flex;
         align-items: center;
-
+        align-content: center;
+        justify-content: space-between;
     }
 
-
     .header-container__contacts-container {
-        height: 35px;
+        margin-top: 0;
+        height: 16px;
+        max-width: 155px;
+    }
+
+    .header-container__phone-wrapper {
+        margin-top: 0;
+        height: 16px;
+        max-width: 155px;
+    }
+
+    .header-container__phone {
+        margin-top: 0;
+        height: 16px;
+        width: 155px;
     }
 
 
@@ -316,88 +392,22 @@ a {
         display: none;
     }
 
-    .header-container__phone {
-        margin-top: 5px;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .header-container__phone h3 {
-        font-size: 20px;
-    }
-
     .header-container__phone h6 {
         display: none;
-    }
-
-    .header-container__phone-wrapper {
-        margin: 0;
-        max-height: 30px;
-        width: 250px;
-        align-items: center;
-
-    }
-
-    .header-container__phone-wrapper img {
-        width: 20px;
-        height: 30px;
-    }
-
-    #call-back-btn {
-        width: 140px;
-        height: 30px;
-        font-size: 12px;
-    }
-
-    .header-container__logo-description-container {
-        height: 24px;
-        margin: 0;
     }
 
     .header-container__logo-description-container h2 {
         display: none;
     }
 
-.nav {
-    display: initial;
-}
-
-
-}
-
-@media screen and (max-width: 720px) {
-
-    .header-container__main-logo {
-
-        min-width: 75px;
-
-    }
-
-    .header-container__contacts-container {
-        margin-left: 15px;
-    }
-
-
-    .header-container__phone {
-        max-width: 170px;
-    }
-
-    .header-container__phone-wrapper h3{
-        max-width: 150px;
-    }
-
-    .header-container__phone-wrapper h3{
-        font-size: 16px;
-    }
     #call-back-btn {
         display: none;
     }
+
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 450px) {
     .header-container__phone {
         display: none;
-}
+    }
 }
